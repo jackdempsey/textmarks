@@ -1,6 +1,23 @@
 = textmarks
 
-Description goes here.
+This is a dead simple lib for communicating with the Textmarks.com API. Rather than writing out methods for each package and function, 
+we use a simple method_missing setup so you can make calls like:
+
+  > Textmarks.Test.echo :str => "echo this back"
+
+  > Textmarks.Anybody.simulate_request :req => "KEYWORD user's text here"
+
+  in general the format is
+
+  > Textmarks.Package_name.function_name :keys_needed => :with_values
+
+and so on. Capitalization is important here. I thought about doing some translation from underscores to CamelCase but am deciding against that for now. 
+
+The advantage of this is an extremely small lib which can respond easily to any changes in the API. The drawbacks are that you need
+to know the hash keys to pass to which methods, and if their API changes, current code will break. 
+
+I really just wanted something simple to get up and running. If there's interest in further developing this, removing the method_missing
+way of doing things, etc, feel free to send me a patch. 
 
 == Note on Patches/Pull Requests
  
