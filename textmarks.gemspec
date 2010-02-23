@@ -9,17 +9,22 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jack Dempsey"]
-  s.date = %q{2010-02-18}
+  s.date = %q{2010-02-22}
   s.description = %q{Simple gem to communicate with the textmarks.com json API}
   s.email = %q{jack.dempsey@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README",
      "README.rdoc"
   ]
   s.files = [
-    "README",
-     "VERSION"
+    "LICENSE",
+     "README.rdoc",
+     "Rakefile",
+     "VERSION",
+     "lib/textmarks.rb",
+     "test/helper.rb",
+     "test/test_textmarks.rb",
+     "textmarks.gemspec"
   ]
   s.homepage = %q{http://github.com/jackdempsey/textmarks}
   s.rdoc_options = ["--charset=UTF-8"]
